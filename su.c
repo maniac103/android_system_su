@@ -415,6 +415,10 @@ int main(int argc, char *argv[])
         chown(REQUESTOR_CACHE_PATH, st.st_uid, st.st_gid);
     }
 
+    setgroups(0, NULL);
+    setegid(st.st_gid);
+    seteuid(st.st_uid);
+
     //LOGD("sudb - Opening database");
     db = database_init();
     if (!db) {
