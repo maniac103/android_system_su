@@ -434,6 +434,7 @@ int main(int argc, char *argv[])
         // it will cause problems
         sqlite3_close(db);
         //LOGD("sudb - Database closed");
+        db = NULL;
     }
 
     switch (dballow) {
