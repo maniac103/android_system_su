@@ -19,6 +19,13 @@
 #define SU_h 1
 
 #define REQUESTOR_DATA_PATH "/data/data/com.noshufou.android.su"
+
+// CyanogenMod-specific behavior
+#define CM_ROOT_ACCESS_DISABLED      0
+#define CM_ROOT_ACCESS_APPS_ONLY     1
+#define CM_ROOT_ACCESS_ADB_ONLY      2
+#define CM_ROOT_ACCESS_APPS_AND_ADB  3
+
 #define REQUESTOR_CACHE_PATH REQUESTOR_DATA_PATH "/cache"
 
 #define REQUESTOR_DATABASES_PATH REQUESTOR_DATA_PATH "/databases"
